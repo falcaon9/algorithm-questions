@@ -1,0 +1,77 @@
+ 
+// 3 tane girilen sayıları büyükten küçüğe sıralama
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+// 3 tane girilen sayıları büyükten küçüğe sıralama
+
+namespace ConsoleApp2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("birinci sayıyı giriniz:");
+
+            int say1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("ikinci sayıyı giriniz:");
+
+            int say2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("üçüncü sayıyı giriniz:");
+
+            int say3 = int.Parse(Console.ReadLine());
+
+            if (2 * say1 == say2 + say3)
+            {
+
+                if (say3 < say2)
+                {
+                    Console.Write(say1 + ">" + say3+ ">" + say2);
+                }
+                else
+                {
+                    Console.Write(say1 + ">" + say2 + ">" + say3);
+                }
+
+            }
+            else if (2 * say2 == say1 + say3)
+            {
+
+                if (say1 < say3)
+                {
+                    Console.Write(say2 + ">" + say3 + ">" + say1);
+                }
+                else
+                {
+                    Console.Write(say2 + ">" + say1 + ">" + say3);
+                }
+
+            }
+            else
+            {
+                if (say1 < say2)
+                {
+                    Console.Write(say3 + ">" + say2 + ">" + say1);
+                }
+                else
+                {
+                    Console.Write(say3 + ">" + say1 + ">" + say2);
+                }
+            
+            }
+
+            Console.ReadLine();
+        }
+
+        
+    }
+}
+
