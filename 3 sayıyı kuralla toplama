@@ -1,0 +1,57 @@
+
+int say1 = int.Parse(Console.ReadLine());
+
+int say2 = int.Parse(Console.ReadLine());
+
+int say3 = int.Parse(Console.ReadLine());
+
+int toplam = 0;
+
+
+if (2 * say1 > say2 + say3)
+{
+	if (say2 > say3)
+	{
+		toplam = say1 + say3;
+
+		Console.WriteLine(toplam);
+	}
+	else
+	{
+		toplam = say1 + say2;
+
+		Console.WriteLine(toplam);
+	}
+}
+else if (2 * say2 > say1 + say3)
+{
+	if (say1 > say3)
+	{
+		toplam = say2 + say3;
+
+		Console.WriteLine(toplam);
+	}
+	else
+	{
+		toplam = say2 + say1;
+
+		Console.WriteLine(toplam);
+	}
+}
+else
+{
+	if (say1 > say2)
+	{
+		toplam = say3 + say2;
+
+		Console.WriteLine(toplam);
+	}
+	else
+	{
+		toplam = say3 + say1;
+
+		Console.WriteLine(toplam);
+	}
+}
+
+Console.ReadLine();
