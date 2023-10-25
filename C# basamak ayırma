@@ -1,0 +1,22 @@
+
+
+int yuzler, onlar, birler;
+
+Console.WriteLine("bir sayı giriniz");
+
+int sayı =int.Parse(Console.ReadLine());
+
+yuzler = sayı / 100;
+sayı = sayı - (yuzler * 100);
+
+onlar = sayı / 10;
+
+sayı =sayı - (onlar * 10);
+
+birler =sayı ;
+
+Console.WriteLine("yüzler basamağı:{0}",yuzler);
+Console.WriteLine("onlar basamağı:{0}",onlar);
+Console.WriteLine("birler basamağı:{0}",birler);
+
+Console.ReadLine();
