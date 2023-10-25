@@ -1,0 +1,12 @@
+
+int[] küme = {1,2,4,5,8,7,3};
+
+Console.WriteLine("sorgulancak sayıyı yazınız:");
+
+int sayı = int.Parse(Console.ReadLine());
+
+int sorgu = Array.IndexOf(küme, sayı);
+
+Console.WriteLine(sorgu);
+
+Console.ReadLine();
