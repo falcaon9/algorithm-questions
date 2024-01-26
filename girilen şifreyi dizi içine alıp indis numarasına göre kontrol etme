@@ -1,0 +1,57 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+
+int main () {
+
+// girilen şifreyi dizi içine alıp indis numarasına göre kontrol etme...
+   
+    int truePassword []={1,2,3,4};
+    
+    printf("lütfen şifreyi satır satır giriniz:");
+    printf("\n");
+    
+    int a,b,c,d;
+    
+    printf("1.input:");
+    scanf("%d",&a);
+    
+    printf("n");
+    printf("2.input:");
+    scanf("%d",&b);
+    
+   
+    printf("3.input:");
+    scanf("%d",&c);
+    
+
+    printf("4.input:");
+    scanf("%d",&d);
+    
+    int userPassword []={a,b,c,d};
+    
+    
+    
+    int flagbit=1;
+    
+    for (int i=0; i<=3; i++) {
+        
+        if (userPassword[i]==truePassword[i]) {
+            flagbit=1;
+        }
+        else
+        {
+            flagbit=0;
+        }
+       
+    }
+    if (flagbit==0) {
+        printf("false password");
+    }
+    else
+    {
+        printf("true password");
+    }
+
+}
+    
