@@ -1,0 +1,58 @@
+//
+//  main.cpp
+//  learn_c++
+//
+//  Created by mahmut esat on 31.01.2024.
+// write by mek
+
+
+//                                 B A T T L E   S H İ P   G A M E
+
+
+#include <iostream>
+
+int main(int argc, const char * argv[]) {
+
+    bool savunmahattı [4][4]={
+        {0,1,1,0},
+        {0,0,0,0},
+        {1,1,1,0},
+        {0,1,0,1}
+        
+    };
+    
+    int atışsayısı=0   ;
+    int tursayısı=0;
+    
+    while (atışsayısı<4) {
+        int satır,sütun;
+        
+        std::cout<<"atış kordinatlarını giriniz.."<<std::endl;
+        
+        std::cout<<"0-3 arası satır atış kordinatını giriniz.."<<std::endl;
+        std::cin>>satır;
+        
+        std::cout<<"0-3 arası sütun atış kordinatını giriniz.."<<std::endl;
+        std::cin>>sütun;
+        
+        if (savunmahattı[satır][sütun]) {
+            savunmahattı[satır][sütun]=0;
+            
+            atışsayısı++;
+            
+            std::cout<<"isabet!!"<<(4-atışsayısı)<<"left \n.\n";
+        }else{
+            std::cout<<"kaçırdınız.."<<std::endl;
+            
+        }
+        
+        tursayısı++;
+            
+    }
+
+    std::cout<<"tebrikler kazandınız.."<<std::endl;
+    
+    
+    
+    return 0;
+}
