@@ -1,0 +1,96 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+// math functions 
+
+void topfunc(int num1,int num2){
+	
+	num1=num1+num2;
+	
+	
+	printf("%d",num1);
+	
+	
+}
+void minfunc(int num1 , int num2){
+	
+	num1=num1-num2;
+	
+	printf("%d",num1);
+}
+ void carfunc(int num1 ,int num2){
+ 	num1=num1*num2;
+ 	
+ 	printf("%d",num1);
+ 	
+ }
+ void bolfunc(float num1,float num2){
+ 	 float snc=0;
+ 	 
+ 	 snc=num1/num2;
+ 	 
+ 	 printf("%f",snc);
+ }
+ void usfunc(int num1,int num2){
+ 	
+ 	int counter=1;
+ 	int snc1=1;
+ 	for(counter=1;counter<=num2;counter++){
+ 		
+ 		snc1=snc1*num1;
+	 }
+ 	printf("%d",snc1);
+ 	
+ }
+int main (){
+
+ 
+	int x;
+	int num1,num2;
+	int select;
+	
+	while(x==0){
+	
+	
+	printf("birinci sayiyi giriniz \n");
+	
+	 scanf("%d",&num1);
+	
+	printf("ikinci sayiyi giriniz \n");
+
+     scanf("%d",&num2);
+     
+     printf("yapmak istediginiz istediginiz islemi seciniz \n");
+     printf("1-carpma \n");
+     printf("2-bolme \n");
+     printf("3-toplama \n");
+     printf("4-cikarma \n");
+     printf("5-us alma \n");
+     
+     scanf("%d",&select);
+     
+     switch(select){
+     	case 1:
+     	carfunc(num1,num2);
+     	break;
+     	case 2:
+     	 bolfunc(num1,num2);
+     	 break;
+     	 case 3:
+     	 topfunc(num1,num2);
+     	 break;
+     	 case 4:
+     	 minfunc(num1,num2);
+     	 break;
+     	 case 5:
+     	  usfunc(num1,num2);
+     	  break;
+	 }
+	 printf(" \n baska islem yapmak istiyormusun \n");
+	 printf("0-evet \t 1-hayir \n");
+	 scanf("%d",&x);
+	 printf("-*-*-*-*-*-*-*-*-*-*-*-*-* \n");
+	 printf("-*-*-*-*-*-*-*-*-*-*-*-*-* \n");
+ }
+     return 0;
+}
